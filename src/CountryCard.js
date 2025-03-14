@@ -12,7 +12,7 @@ const CountryCard = ({ name, flag }) => {
         padding: "10px",
       }}>
         <img src={flag} alt={`Flag of ${name}`} style={{ width: "100px", height: "60px" }} />
-        <h3>{name}</h3>
+        <h2>{name}</h2>
       </div>
     );
   };

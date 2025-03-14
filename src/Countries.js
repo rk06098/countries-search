@@ -18,14 +18,12 @@ const Countries = () => {
       .catch((error) => console.error("Error fetching data:", error));
   }, []);
 
-  const handleSearch = (event) => {
-    const query = event.target.value.toLowerCase();
-    const filtered = countries.filter(country => 
-      country.name && country.name.toLowerCase().includes(query) // Check if name exists
+  const handleSearch = (query) => {
+    const filtered = countries.filter((country) =>
+      country.name.toLowerCase().includes(query.toLowerCase())
     );
     setFilteredCountries(filtered);
   };
-  
 
   return (
     <div style={{ textAlign: "center", marginTop: "20px" }}>
