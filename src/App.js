@@ -52,7 +52,7 @@ function App() {
               alt={`Flag of ${country.common}`}
               className="flag-image"
             />
-            <h3>{country.common}</h3>
+            <h2>{country.common}</h2>
           </div>
         ))}
       </div>
